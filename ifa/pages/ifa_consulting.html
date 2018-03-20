@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!--
+Template Name: Dodmond
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html lang="">
+<head>
+<title>IFA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/*Social media icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+ color: white;
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+</style>
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_left">
+      <ul>
+        <li><i class="fa fa-phone"></i> +237 242 000 346 </li>
+        <li><i class="fa fa-envelope-o"></i> info@ifa-cm.pro </li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li><i class="fa fa-user-o"></i>LOGIN</a></li>
+        <li><i class="fa fa-user-circle"></i> REGISTER </li>
+      </ul>
+    </div>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+     <div id="logo" class="fl_left">
+      <img src="../images/demo/backgrounds/logo.jpg" style="width: 150px;height: 110px;border-radius: 5px;">
+    </div>
+
+
+  <div id="quickinfo" class="fl_right">
+  <div class="nospace inline"> 
+
+  
+  </div>
+</div>
+</div>
+
+     
+    </div>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li class="active"><a href="../index.html">Home</a></li>
+      <li><a class="drop" href="#">IFA MicroStock</a>
+        <ul>
+          <li><a href="#">I Support a Financial Cause</a></li>
+          <li><a href="#">I Need Financial Support</a></li>
+          <li><a href="#">I Help my Community</a></li>
+          <li><a href="#">I want to Invest and grow my Savings</a></li>
+          <li><a href="#">I want to Finance my project</a></li>
+          <li><a href="#">I am a Company in need of Finance</a></li>
+        </ul>
+      </li>
+      <li><a class="drop" href="#">IFA Consulting</a>
+         <ul>
+          <li><a href="#expertise">Expertise and Training</a></li>
+          <li><a href="#consulting">Our Consultants</a></li>
+          <li><a href="#clinic">Company Clinic</a></li>
+          <li><a href="#publications">Publications/IFA Express</a></li>
+          <li><a href="#acheivements">Our Acheivements</a></li>
+          <li><a href="#partners">They trust Us</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('../images/demo/backgrounds/olu.jpg');">
+  <div id="pageintro1" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="flexslider basicslider">
+      <ul class="slides">
+        <li>
+          <article>
+            <p>Go where the winner goes</p>
+            <h3 class="heading">About Us</h3>
+            <p>IFA is a Cameroonian company whose objective is to contribute to the emergence of the African continent through tools such as crowdfunding and consulting (among others).</p>
+          
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>Crowdfunding and Crowdlending</p>
+            <h3 class="heading">CrowdFunding and CrowdLending</h3>
+            <p>IFA is the first Crowdfunding and Crowdlending platform in Cameroon and in Central Africa. Through its objective, the IFA aims to allow people to directly finance small and medium projects that can improve their living conditions, sometimes without cost. IFA is therefore striving to encourage financial inclusion in Africa.</p>
+            
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>IFA MicroStock</p>
+            <h3 class="heading">IFA Microstock Formula</h3>
+            <p>IFA has developed the IFA Micro-Stock formula. This concept proposes a capital market formula adapted to the characteristics of SMEs and the portfolios of low-income households. IFA aims to offer African populations the means to directly finance their own development, to get involved in the economic life of their country and to contribute to the well-being of their community.</p>
+            <footer><a class="btn" href="index.html">Read More &rsaquo;</a></footer>
+           </article>
+            
+        </li>
+        <li>
+           <article>
+            <p>Advice,Train and Finance Excellence</p>
+            <h3 class="heading">IFA Consulting</h3>
+            <p>IFA also offers advice / training packages, expertise, seminars, business lounges, monthly publications, etc. : a real private clinic for companies. IFA puts its experts' at the service of the latter, this in order to provide solutions to practical problems of companies.IFA also offers advice / training packages, expertise, seminars, business lounges, monthly publications, etc. : a real private clinic for companies. IFA puts its experts' at the service of the latter, this in order to provide solutions to practical problems of companies.</p>
+            
+           </article>
+
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">IFA Consulting Formulae</h6>
+      <p>The Auditors have the choice between several modes of organizing training seminars</p>
+    </div>
+    <ul class="nospace group">
+      <li class="one_third first">
+        <article><i class="btmspace-30 fa fa-3x fa-laptop"></i>
+          <h6 class="heading font-x1">Classic Seminars</h6>
+          <p class="btmspace-30">Classic seminars are organized on a regular basis and at specific times </p>
+          </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-lastfm"></i>
+          <h6 class="heading font-x1">Scheduled Seminars</h6>
+          <p class="btmspace-30">In this kind of seminar,IFA agrees on a program with the auditors.</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-codiepie"></i>
+          <h6 class="heading font-x1">VIP Training Seminars</h6>
+          <p class="btmspace-30">Pertains to senior executives who considering their occupations can not fit easily into an ordinary training session. As a result, they benefit from a capacity building à la carte, in their offices and at the hours agreed upon with the IFA Expert at their disposal.</p>
+          <a href=".../docs/calendar_of_Training_French.pdf" download>calendar_of_Training_French</a>
+        </article>
+      </li>
+      
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading" id="consulting">IFA Consulting Offers</h6>
+      <p>IFA Consulting, offers the following services;</p>
+    </div>
+    <ul class="nospace group">
+      <li class="one_third first">
+        <article><i class="btmspace-30 fa fa-3x fa-laptop"></i>
+          <h6 class="heading font-x1" id="expertise">Expertise and Training</h6>
+          <p> You can see a list of the different expertises we have below and the trainings we offer, in the following attached calendar
+        <a href=".../docs/calendar_of_Training_French.pdf" download>calendar_of_Training_French</a>
+        </p>
+          </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-lastfm"></i>
+          <h6 class="heading font-x1" id="fields">Consultancy Fields</h6>
+          <ul>
+          <li>Econometric and Statistical expertise</li>
+          <li>Computer and Financial Expertise</li>
+          <li>Economical Expertise</li>
+        </ul>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-codiepie"></i>
+          <h6 class="heading font-x1" id="clinic">Comapany Clinic</h6>
+          <p class="btmspace-30">Click here and fill out the form to indicate your needs; (a personalized service to answer all concerns with respect to the management of your company)</p>
+          <a href=".../sign-up-login-form/index.html" target="_blank">Indicate your needs</a>
+        </article>
+      </li>
+     
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">IFA Acheivements,Publications and Supports Toward Education</h6>
+      <p>IFA Consulting, have put tthe below in place to suport and inform the community about its doing;</p>
+    </div>
+    <ul class="nospace group">
+     
+      <li class="one_third first">
+        <article><i class="btmspace-30 fa fa-3x fa-codiepie"></i>
+          <h6 class="heading font-x1" id="acheievements">Our Acheivements</h6>
+          <p class="btmspace-30">So far our acheievements are as follows;</p>
+         <p>In Africa;International Scientific Meeting for Africa <a href="http://aaye.org/index.php?option=com_docman&task=doc_details&gid=55&Itemid=11&lang=fr" target="_blank">Report
+          </a></p><br/>
+          <p>In Cameroon;Capacity Building Seminar <a href="../docs/rapport_capacity_building_seminar.pdf" download="">Report</a></p>
+        
+     
+        </article>
+      </li>
+
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-codiepie"></i>
+          <h6 class="heading font-x1" id="suport">Educational Supports</h6>
+          <p class="btmspace-30">IFA produces training materials, educational videos and more.</p>
+          <a href="https://youtu.be/Qy6-zS32j4A" target="_blank">Watch Video1</a>
+          <br/>
+          <a href="https://youtu.be/-1YCLf9Ymqs" target="_blank">Watch Video2</a>
+          
+     
+        </article>
+      </li>
+
+      <li class="one_third">
+        <article><i class="btmspace-30 fa fa-3x fa-codiepie"></i>
+          <h6 class="heading font-x1" id="publications">Publications</h6>
+          <p class="btmspace-30">Click here and see a list of IFA Publications;</p>
+          <a href="http://aaye.org/index.php?option=com_docman&Itemid=136&lang=fr" target="_blank">IFA Pulications</a>
+        </article>
+      </li>
+      
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading">PARTNERS</h6>
+     <img src="../images/demo/partnerslogo/AAYE.png"  style="width: 150px;width: 100px;border-radius: 5px;margin-top: 15px;" />
+    </div>
+ </main>
+</div>
+<!-- ################################################################################################ -->
+
+
+<!-- ################################################################################################ -->
+<div class="wrapper row4 bgded overlay" style="background-image:url('../images/demo/backgrounds/samson.jpg');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="group">
+      <div class="one_half first">
+        <h6 class="heading">Address and Contact Info</h6>
+        <ul class="nospace btmspace-30 linklist contact">
+          <li><i class="fa fa-map-marker"></i>
+            <address>
+            Street Name &amp; PO BOX 959, Yaoundé, 00237
+            </address>
+          </li>
+          <li><i class="fa fa-phone"></i> +237 242 676 841(9h-16h de lundi à vendredi ; 9h-12h le samedi) </li>
+          <li><i class="fa fa-envelope-o"></i> ifa.camer@gmail.com / info@ifa-cm.pro</li>
+        </ul>
+      </div>
+<div class="one_half">
+        
+ <form method="post" action="action_page.php">
+          
+  <div>
+    <h2>IFA Newsletter-SignUp</h2>
+  </div>
+
+  <div>
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+  </div>
+
+  <div>
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+        
+      </div>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">ifa-cm</a></p>
+    <p class="fl_right">Donot Miss Anything!!,Follow Us On <a href="https://web.facebook.com/Invest-Fund-Africa-291255361396455/" class="fa fa-facebook"></a>
+      <a href="https://www.linkedin.com/in/ifa-camer/" class="fa fa-linkedin"></a>
+      <a href="https://www.youtube.com/channel/UCVnKXQNX_Kl6Or2-6JnLp9g" class="fa fa-youtube"></a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/jquery.flexslider-min.js"></script>
+</body>
+</html>
